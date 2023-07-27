@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64515D68-A147-410E-84E8-25FEFCED7F1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Memorama_Final</RootNamespace>
+    <AssemblyName>Memorama_Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Memorama">
+      <HintPath>..\..\..\..\source\repos\Memorama\Memorama\bin\Debug\Memorama.dll</HintPath>
+    </Reference>
+    <Reference Include="Memorama Normal">
+      <HintPath>..\..\..\..\source\repos\Memorama Normal\Memorama Normal\bin\Debug\Memorama Normal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Timer">
+      <HintPath>..\..\..\..\source\repos\Timer\Timer\bin\Debug\Timer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dificultad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dificultad.Designer.cs">
+      <DependentUpon>Dificultad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hard Player 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hard Player 1.Designer.cs">
+      <DependentUpon>Hard Player 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player 1 Normal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player 1 Normal.Designer.cs">
+      <DependentUpon>Player 1 Normal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player 2.Designer.cs">
+      <DependentUpon>Player 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Temporizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temporizador.Designer.cs">
+      <DependentUpon>Temporizador.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dificultad.resx">
+      <DependentUpon>Dificultad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hard Player 1.resx">
+      <DependentUpon>Hard Player 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player 1 Normal.resx">
+      <DependentUpon>Player 1 Normal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player 2.resx">
+      <DependentUpon>Player 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Temporizador.resx">
+      <DependentUpon>Temporizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relojjj.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
